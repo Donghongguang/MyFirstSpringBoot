@@ -33,6 +33,13 @@
     from t_userinfo
     where user_id = #{userId,jdbcType=INTEGER}
   </select>
+
+  <!--根据名字找到登录的用户-->
+  <select id="login" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select * from t_userinfo where username=#{username,jdbcType=VARCHAR}
+  </select>
+
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     <!--
       WARNING - @mbggenerated
