@@ -11,4 +11,10 @@ import com.example.demo.entity.UserInfo;
 public interface UserService {
 
     MyResult login(UserInfo userInfo);
+
+    MyResult getAllUSerINfo();
+
+    MyResult editUser(UserInfo userInfo);
+
+    MyResult addUser(UserInfo userInfo);
 }

@@ -2,6 +2,7 @@ package com.example.demo.dao;
 
 import com.example.demo.entity.UserInfo;
 
+import java.util.List;
 
 
 public interface UserInfoMapper {
@@ -59,4 +60,11 @@ public interface UserInfoMapper {
      * 2019-05-06
      */
      UserInfo login(String username);
+
+    /**
+     * 返回所有的user iNfo信息
+     * 董红广
+     * 2019-05-08
+     */
+    List<UserInfo> selectAllUserInfo();
 }
